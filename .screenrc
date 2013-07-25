@@ -1,0 +1,16 @@
+hardstatus off
+escape ^zz
+backtick 1 1200 1200 whoami
+bindkey -k k1 next
+bindkey ^[. next
+bindkey ^[, prev
+caption always "%c | %-Lw%{= BW}%50>%n* %t%{-}%+Lw%<"
+#scrollback 10000
+defscrollback 10000
+
+attrcolor b ".I"
+termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
+defbce "on"
+
+#unsetenv SSH_AUTH_SOCK
+#setenv SSH_AUTH_SOCK /home/$USER/.ssh/agent-screen-socket
